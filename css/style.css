@@ -1,9 +1,8 @@
-
-.container .mycard{
+.container .mycard {
   position: relative;
   max-width: 300px;
   height: 150px;
-  background-image: url('../img/card.jpg');
+  background-image: url("../img/card.jpg");
   background-size: cover;
   text-shadow: 2px 2px 3px gray;
   border-radius: 6px;
@@ -13,21 +12,21 @@
   flex-direction: column;
   transition: 0.5s ease-in-out;
 }
-.container .mycard:hover{
+.container .mycard:hover {
   height: 300px;
 }
 
-.container .mycard .head{
+.container .mycard .head {
   position: relative;
   height: 260px;
 }
 
-.container .mycard .head h2{
+.container .mycard .head h2 {
   max-width: 100%;
   border-radius: 6px;
 }
 
-.container .mycard .cdetail{
+.container .mycard .cdetail {
   position: relative;
   margin-top: -70px;
   padding: 10px 15px;
@@ -35,21 +34,60 @@
   opacity: 0;
   transition: 0.5s ease-in-out;
 }
-.container .mycard:hover .cdetail{
+.container .mycard:hover .cdetail {
   visibility: visible;
   opacity: 1;
   margin-top: -30px;
 }
 
-.logo a:link{
+.card {
+  width: 350px;
+  height: 225px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  transition: all 0.4s;
+}
+
+.card::before {
+  content: "---My Portfolio---";
+  letter-spacing: 0.1em;
+  position: absolute;
+  bottom: 8px;
+  left: 20px;
+  color: rgb(51, 51, 51);
+  font-size: 1em;
+  font-weight: 700;
+}
+
+
+.card div {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.212);
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.4s;
+  background-image: url("../img/portfolio.png");
+  background-size: cover;
+  opacity: 1;
+}
+
+.card:hover div {
+  transform: translateY(-30px);
+  opacity: 0.9;
+}
+
+.logo a:link {
   text-decoration: none;
 }
-.logo a:visited{
+.logo a:visited {
   text-decoration: none;
 }
-.logo a:hover{
+.logo a:hover {
   text-decoration: none;
 }
-.logo a:active{
+.logo a:active {
   text-decoration: none;
 }
